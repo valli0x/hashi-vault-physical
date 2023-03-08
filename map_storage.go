@@ -18,7 +18,6 @@ import (
 	physMySQL "github.com/valli0x/hashi-vault-physical/mysql"
 	physOCI "github.com/valli0x/hashi-vault-physical/oci"
 	physPostgreSQL "github.com/valli0x/hashi-vault-physical/postgresql"
-	physRaft "github.com/valli0x/hashi-vault-physical/hashi-raft"
 	physS3 "github.com/valli0x/hashi-vault-physical/s3"
 	physSpanner "github.com/valli0x/hashi-vault-physical/spanner"
 	physSwift "github.com/valli0x/hashi-vault-physical/swift"
@@ -55,7 +54,6 @@ var (
 		"s3":                     physS3.NewS3Backend,
 		"spanner":                physSpanner.NewBackend,
 		"swift":                  physSwift.NewSwiftBackend,
-		"raft":                   physRaft.NewRaftBackend,
 		"zookeeper":              physZooKeeper.NewZooKeeperBackend,
 	}
 )
